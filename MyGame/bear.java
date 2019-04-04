@@ -14,6 +14,63 @@ public class bear extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        World myWorld = getWorld();
+        checkKeyPress();
+        touchBall();
+        
+        touchVirus();
+        
     }    
+
+    /**
+     * Check whether a keyboard key has been pressed and react if it has.
+     */
+    private void checkKeyPress()
+    {
+        if (Greenfoot.isKeyDown("up")) 
+        {
+            setLocation(getX(), getY()-1);
+        }
+        
+        if (Greenfoot.isKeyDown("down")) 
+        {
+            setLocation(getX(), getY()+1);
+        }
+        
+        if (Greenfoot.isKeyDown("left")) 
+        {
+            setLocation(getX()-1, getY());
+        }
+        
+        if (Greenfoot.isKeyDown("right")) 
+        {
+            setLocation(getX()+1, getY());
+        }
+    }
+    
+    /**
+     * 
+     */
+    public void touchBall()
+    {
+        if ( isTouching(ball.class) ) 
+        {
+            removeTouching(ball.class);
+            
+        }
+       
+        
+    }
+    
+    /**
+     * 
+     */
+    public void touchVirus()
+    {
+        if ( isTouching(virus.class) ) 
+        {
+            removeTouching(virus.class);
+        }
+    }
+
 }
