@@ -1,21 +1,22 @@
+
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class background here.
+ * This is a game about a bear try its best eat red balls.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Sam Chen 
+ * @version 1.0
  */
-public class background extends World
+public class Space extends World
 {
-    
-    
-    
+    Timer timer = new Timer();
+    Counter counter = new Counter();
+    private int time;
     /**
      * Constructor for objects of class background.
      * 
      */
-    public background()
+    public Space()
     {    
         // Create a new world with 500x500 cells with a cell size of 1x1 pixels.
         super(500, 500, 1); 
@@ -38,7 +39,8 @@ public class background extends World
             
         }
         
-      
+        addObject(counter, 80, 40);
+        addObject(timer, 380, 40);
     }
 
     
@@ -57,7 +59,15 @@ public class background extends World
         }
         
         addObject( new bear(), 250, 400 );
-        
     }
+    
+    /**
+     * Get counter in the world.
+     */
+    public Counter getCounter()
+    {
+        return counter;
+    }
+    
     
 }

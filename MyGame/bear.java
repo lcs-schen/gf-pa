@@ -16,14 +16,27 @@ public class bear extends Actor
     {
         World myWorld = getWorld();
         checkKeyPress();
-        touchBall();
         
-        touchVirus();
+        if ( isTouching(ball.class) ) 
+        {
+            removeTouching(ball.class);
+            Space space = (Space)myWorld;
+            Counter counter = space.getCounter();
+            counter.addScore();
+        }
+        
+        if ( isTouching(virus.class) ) 
+        {
+            removeTouching(virus.class);
+            Space space = (Space)myWorld;
+            Counter counter = space.getCounter();
+            counter.removeScore();
+        }
         
     }    
 
     /**
-     * Check whether a keyboard key has been pressed and react if it has.
+     * Use key board control the bear to move.
      */
     private void checkKeyPress()
     {
@@ -46,31 +59,8 @@ public class bear extends Actor
         {
             setLocation(getX()+1, getY());
         }
-    }
-    
-    /**
-     * 
-     */
-    public void touchBall()
-    {
-        if ( isTouching(ball.class) ) 
-        {
-            removeTouching(ball.class);
-            
-        }
-       
         
     }
     
-    /**
-     * 
-     */
-    public void touchVirus()
-    {
-        if ( isTouching(virus.class) ) 
-        {
-            removeTouching(virus.class);
-        }
-    }
-
+    
 }

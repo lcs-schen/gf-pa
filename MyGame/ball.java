@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class ball extends Actor
 {
+    
     /**
      * Act - do whatever the ball wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -21,8 +22,7 @@ public class ball extends Actor
     } 
     
     /**
-     * Check whether we are at the edge of the world. If we are, turn a bit.
-     * If not, do nothing.
+     * When it touch the edge turn another way.
      */
     public void turnAtEdge()
     {
@@ -33,8 +33,7 @@ public class ball extends Actor
     }
 
     /**
-     * Randomly decide to turn from the current direction, or not. If we turn
-     * turn a bit left or right by a random degree.
+     * Randomly decide to turn from the current direction.
      */
     public void randomTurn()
     {
@@ -44,5 +43,5 @@ public class ball extends Actor
         }
     }
     
-    
+   
 }

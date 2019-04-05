@@ -20,8 +20,7 @@ public class virus extends Actor
     }    
 
     /**
-     * Check whether we are at the edge of the world. If we are, turn a bit.
-     * If not, do nothing.
+     * When it touch the edge turn another way.
      */
     public void turnAtEdge()
     {
@@ -32,8 +31,7 @@ public class virus extends Actor
     }
 
     /**
-     * Randomly decide to turn from the current direction, or not. If we turn
-     * turn a bit left or right by a random degree.
+     * Randomly decide to turn from the current direction.
      */
     public void randomTurn()
     {
