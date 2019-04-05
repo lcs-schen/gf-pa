@@ -12,6 +12,7 @@ public class Space extends World
     Timer timer = new Timer();
     Counter counter = new Counter();
     private int time;
+    
     /**
      * Constructor for objects of class background.
      * 
@@ -22,6 +23,7 @@ public class Space extends World
         super(500, 500, 1); 
         setUp();
         prepare();
+        
     }
 
    
@@ -31,7 +33,7 @@ public class Space extends World
     private void setUp()
     {
         int i = 0;
-        while (i<7) {
+        while (i<10) {
             int x = Greenfoot.getRandomNumber(getWidth());
             int y = Greenfoot.getRandomNumber(getHeight());
             addObject( new ball(), x, y );

@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class virus here.
+ * Class virus, if bear eat a virus, lose 1 point.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Sam Chen
+ * @version 1.0
  */
 public class virus extends Actor
 {

@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Timer here.
+ * Help us know how many time we have left.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Sam Chen
+ * @version 1.0
  */
 public class Timer extends Actor
 {
@@ -24,6 +24,4 @@ public class Timer extends Actor
         }
     }    
 
-    
-    
 }

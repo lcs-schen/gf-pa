@@ -2,10 +2,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 
 /**
- * Write a description of class counter here.
+ * Help us know how many score we have.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Sam Chen
+ * @version 1.0
  */
 public class Counter extends Actor
 {

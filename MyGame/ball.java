@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class ball here.
+ * Class ball, if the bear eat a ball, gain 1 point.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Sam Chen
+ * @version 1.0
  */
 public class ball extends Actor
 {
@@ -42,6 +42,4 @@ public class ball extends Actor
             turn(Greenfoot.getRandomNumber(70)-35);
         }
     }
-    
-   
 }
